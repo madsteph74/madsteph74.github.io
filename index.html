@@ -1,76 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Déroulant</title>
-    <style>
-        .menu {
-            list-style: none;
-            padding: 0;
-        }
-        .menu li {
-            position: relative;
-        }
-        .menu > li > a {
-            display: block;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-        }
-        .menu > li > a:hover {
-            background-color: #555;
-        }
-        .submenu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #444;
-            padding: 0;
-            list-style: none;
-        }
-        .submenu li a {
-            display: block;
-            padding: 10px;
-            color: white;
-            text-decoration: none;
-        }
-        .submenu li a:hover {
-            background-color: #666;
-        }
-        .menu > li:hover .submenu {
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <ul class="menu">
-        <li>
-            <a href="#">Menu 1</a>
-            <ul class="submenu">
-                <li><a href="#">Sous-menu 1</a></li>
-                <li><a href="#">Sous-menu 2</a></li>
-                <li><a href="#">Sous-menu 3</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">Menu 2</a>
-            <ul class="submenu">
-                <li><a href="#">Sous-menu 1</a></li>
-                <li><a href="#">Sous-menu 2</a></li>
-                <li><a href="#">Sous-menu 3</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">Menu 3</a>
-            <ul class="submenu">
-                <li><a href="#">Sous-menu 1</a></li>
-                <li><a href="#">Sous-menu 2</a></li>
-                <li><a href="#">Sous-menu 3</a></li>
-            </ul>
-        </li>
-    </ul>
-</body>
-</html>
+
+---
+layout: default
+title: "Accueil"
+---
+
+Bienvenue sur mon blog!
+
+Ceci est la page d'accueil de mon blog. Vous pouvez explorer les différentes catégories en utilisant le menu en haut.
