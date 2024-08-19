@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 1000px;
+            height: 750px; /* Augmenté pour accommoder les noms de catégories */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title {
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        .circular-mask {
+            clip-path: circle(50% at 50% 50%);
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        .large-sphere {
+            width: 300px;
+            height: 300px;
+            margin-bottom: 40px;
+        }
+        .small-spheres-container {
+            display: flex;
+            justify-content: space-between;
+            width: 900px;
+        }
+        .small-sphere-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .small-sphere {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 10px; /* Espace entre la sphère et le nom */
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .category-name {
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">madsteph world</div>
+        <a href="world.html">
+            <div class="circular-mask large-sphere">
+                <img src="world.webp" alt="Image du monde central">
+            </div>
+        </a>
+        <div class="small-spheres-container">
+            <a href="Grow.html" class="small-sphere-wrapper">
+                <div class="circular-mask small-sphere">
+                    <img src="Grow.webp" alt="Image du monde Grow">
+                </div>
+                <div class="category-name">Grow</div>
+            </a>
+            <a href="Hacking.html" class="small-sphere-wrapper">
+                <div class="circular-mask small-sphere">
+                    <img src="Hacking.webp" alt="Image du monde Hacking">
+                </div>
+                <div class="category-name">Hacking</div>
+            </a>
+            <a href="Aero.html" class="small-sphere-wrapper">
+                <div class="circular-mask small-sphere">
+                    <img src="Aero.webp" alt="Image du monde Aero">
+                </div>
+                <div class="category-name">Aero</div>
+            </a>
+            <a href="Sports.html" class="small-sphere-wrapper">
+                <div class="circular-mask small-sphere">
+                    <img src="Sports.webp" alt="Image du monde Sports">
+                </div>
+                <div class="category-name">Sports</div>
+            </a>
+            <a href="Pompiers.html" class="small-sphere-wrapper">
+                <div class="circular-mask small-sphere">
+                    <img src="Pompiers.webp" alt="Image du monde Pompiers">
+                </div>
+                <div class="category-name">Pompiers</div>
+            </a>
+            <a href="Music.html" class="small-sphere-wrapper">
+                <div class="circular-mask small-sphere">
+                    <img src="Music.webp" alt="Image du monde Music">
+                </div>
+                <div class="category-name">Music</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
