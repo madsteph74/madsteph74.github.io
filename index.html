@@ -3,67 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Circulaire </title>
+    <title>Menu Déroulant</title>
     <style>
-        .container {
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
             position: relative;
-            width: 600px;
-            height: 600px;
-            margin: 50px auto;
         }
-        .center-circle {
+        .menu > li > a {
+            display: block;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+        }
+        .menu > li > a:hover {
+            background-color: #555;
+        }
+        .submenu {
+            display: none;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 0;
+            list-style: none;
         }
-        .satellite {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: red;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
+        .submenu li a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
         }
-        .satellite img {
-            max-width: 60%;
-            max-height: 60%;
+        .submenu li a:hover {
+            background-color: #666;
         }
-        .satellite:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
-        .satellite:nth-child(2) { top: 15%; right: 15%; }
-        .satellite:nth-child(3) { top: 50%; right: 0; transform: translateY(-50%); }
-        .satellite:nth-child(4) { bottom: 15%; right: 15%; }
-        .satellite:nth-child(5) { bottom: 0; left: 50%; transform: translateX(-50%); }
-        .satellite:nth-child(6) { bottom: 15%; left: 15%; }
-        .satellite:nth-child(7) { top: 50%; left: 0; transform: translateY(-50%); }
-        .satellite:nth-child(8) { top: 15%; left: 15%; }
+        .menu > li:hover .submenu {
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="center-circle">
-            <h2>Responsive Web Design: Why?</h2>
-        </div>
-        <div class="satellite"><img src="icon1.png" alt="Icon 1"></div>
-        <div class="satellite"><img src="icon2.png" alt="Icon 2"></div>
-        <div class="satellite"><img src="icon3.png" alt="Icon 3"></div>
-        <div class="satellite"><img src="icon4.png" alt="Icon 4"></div>
-        <div class="satellite"><img src="icon5.png" alt="Icon 5"></div>
-        <div class="satellite"><img src="icon6.png" alt="Icon 6"></div>
-        <div class="satellite"><img src="icon7.png" alt="Icon 7"></div>
-        <div class="satellite"><img src="icon8.png" alt="Icon 8"></div>
-    </div>
+    <ul class="menu">
+        <li>
+            <a href="#">Menu 1</a>
+            <ul class="submenu">
+                <li><a href="#">Sous-menu 1</a></li>
+                <li><a href="#">Sous-menu 2</a></li>
+                <li><a href="#">Sous-menu 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Menu 2</a>
+            <ul class="submenu">
+                <li><a href="#">Sous-menu 1</a></li>
+                <li><a href="#">Sous-menu 2</a></li>
+                <li><a href="#">Sous-menu 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Menu 3</a>
+            <ul class="submenu">
+                <li><a href="#">Sous-menu 1</a></li>
+                <li><a href="#">Sous-menu 2</a></li>
+                <li><a href="#">Sous-menu 3</a></li>
+            </ul>
+        </li>
+    </ul>
 </body>
 </html>
