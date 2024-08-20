@@ -5,14 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pompiers - Madsteph World</title>
     <style>
-        /* Même style que Grow.html */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+        }
+        .logo-container {
+            width: 100px; /* Ajustez la taille du logo selon vos besoins */
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+        .logo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .menu {
+            margin-top: 50px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin: 10px 0;
+        }
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: #555;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .menu li a:hover {
+            background-color: #777;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="Pompiers.webp" alt="Logo Pompiers" class="logo">
+    <div class="header">
+        <div class="logo-container">
+            <img src="Pompiers.webp" alt="Logo Pompiers" class="logo">
+        </div>
         <h1>Pompiers</h1>
-        <p>Honorez le courage et le dévouement des pompiers. Découvrez leur formation, leur équipement, et les défis qu'ils relèvent quotidiennement pour assurer notre sécurité et sauver des vies.</p>
     </div>
+    <ul class="menu">
+        <li><a href="CTA.html">CTA</a></li>
+        <li><a href="Operationel.html">Opérationel</a></li>
+        <li><a href="Concours.html">Concours</a></li>
+    </ul>
 </body>
 </html>
